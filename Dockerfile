@@ -12,6 +12,10 @@ RUN apt update && apt install -y \
     libgtk2.0-0 \
     gstreamer1.0-gtk3 \
     libgstreamer1.0-dev \
+    gstreamer1.0-plugins-base \
+    gstreamer1.0-plugins-good \
+    gstreamer1.0-plugins-bad \
+    gstreamer1.0-plugins-ugly \
     && apt clean && rm -rf /var/lib/apt/lists/*
 
 ADD flash_player_sa_linux.x86_64.tar.gz \
